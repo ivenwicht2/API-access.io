@@ -48,6 +48,10 @@ html {
 }
 
 body {
+  background-image:url("images/flag.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,14 +65,18 @@ body {
 }
 
 .Wrapper {
-  flex: 0 0 80%;
-  max-width: 80%;
+  background-color: #455A64;
+  height: 30%;
+  width: 90%;
+  left: 5%;
+  right: 5%;
+  border-radius: 25px;
 }
 
 .Title {
   margin: 0 0 var(--gutterXx) 0;
   padding: 0;
-  color: #000000;
+  color: #ffffff;
   font-size: var(--fontSizeXx);
   font-weight: 400;
   line-height: var(--lineHeightSm);
@@ -76,8 +84,21 @@ body {
   /*text-shadow: -0.1rem 0.1rem 0.2rem var(--colorPrimary800);*/
 }
 
-.Input {
+input {
   position: relative;
+  max-width: 60%;
+  left:20%
+}
+p,
+label {
+    font: 2 'Fira Sans', sans-serif;
+    position: relative;
+    left:20%;
+    color:white;
+}
+
+#city-input{
+  display: "none";
 }
 
 .Input-text {
@@ -96,12 +117,12 @@ body {
 }
 
 .Input-text::placeholder {
-  color: #B0BEC5;
+  color: #313335;
 }
 
 .Input-text:focus {
   outline: none;
-  box-shadow: 0.2rem 0.8rem 1.6rem var(--colorPrimary600);
+  /*box-shadow: 0.2rem 0.8rem 1.6rem var(--colorPrimary600);*/
 }
 
 .Input-label {
