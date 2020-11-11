@@ -5,22 +5,34 @@
 <html>
     <head>
         <link rel="stylesheet" href="prop.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
         <title>
-            display api
+            Display Api
         </title>
     </head>
  <body>
      
-    <div class="Wrapper">
-        <h1 id="Title" class="Title">Enter your City or State!</h1>
-        <div id="Input" class="Input">
-          <input type="text" id="input" class="Input-text" placeholder="state or city.....">
-        </div>
+    <div id="Wrapper" class="Wrapper">
+        <h1 id="Title" class="Title">Enter your City and State!</h1>
+        <div>
+          <div id="Input-state" class="Input">
+            <input type="text" id="input" class="Input-text" placeholder="State..."  value="Alaska">
+          </div>
+          <div id="Input-box">
+            <input type="checkbox" id="check-ville" class="check-ville" name="check-ville">
+            <label for="check-ville">Search city </label>
+          </div>
+          <div id="Input-city" >
+            <input type="text" id="city-input" class="Input-text" placeholder="City..." value="Juneau">
+          </div>
       </div>
-      <canvas id="myChart" width="0" height="0"></canvas>
-      <script src="js/animation.js"></script>
-      <script src="js/requete.js"></script>
+      </div>
+      <div id="Display-chart">
+        <canvas id="myChart"></canvas>
+    </div>
       <script src="js/chart.js"></script>
+      <script src="js/requete.js"></script>
+      <script src="js/animation.js"></script>
       <p id="Test"></p>
  </body>
 </html>
