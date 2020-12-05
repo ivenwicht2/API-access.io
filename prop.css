@@ -1,5 +1,61 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis');
 
+
+#Wrap-chart{
+  position: relative;
+  display: none;
+  left : 20%;
+  top : 20%;
+  
+}
+#CH{
+  position: relative;
+}
+#CB{
+  position: relative;
+}
+
+
+#House-chart{
+  left: 2%;
+  right : 40%;
+  height: 30%;
+  width: 30%;
+  float:left;
+  position: relative;
+}
+
+#Economy-chart{
+  left : 7%;
+  right : 20%;
+  height: 30%;
+  width: 30%;
+  position: relative;
+  float: left;
+}
+
+#Travel-chart{
+  top : 10%;
+  left : 2%;
+  right : 20%;
+  height: 30%;
+  width: 30%;
+  position: relative;
+}
+#CityCanva{
+  position: relative;
+  height: 30%;
+  width: 30%;
+  top : 10%;
+  left : 40%;
+}
+
+#city_info{
+  height: 100%;
+  width: 100%;
+
+}
+
 :root {
   /* generic */
   --gutterSm: 0.4rem;
@@ -48,9 +104,9 @@ html {
 }
 
 body {
-  background-image:url("images/flag.svg");
+  /*background-image:url("images/flag.svg");
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
   background-size: cover;
   display: flex;
   align-items: center;
