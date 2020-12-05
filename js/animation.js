@@ -8,6 +8,7 @@ function move(json,city){
 
         if (pos == -356){
             clearInterval(id);
+            wrapper.style.display = "none";
             chart_city(json,city);
 
         }
@@ -38,6 +39,7 @@ title.style.left = "40%";
 document.addEventListener("keydown", function (e) {
     if (e.keyCode=== 13 && done_input == false) {  //checks whether the pressed key is "Enter"
     if(input_city.value != "" && input_state.value != ""){
+        done_input == true;
         exist(input_state.value,input_city.value)        
         }
     }

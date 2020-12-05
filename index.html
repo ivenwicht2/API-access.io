@@ -11,7 +11,18 @@
         </title>
     </head>
  <body>
-     
+   <div id='Wrap-chart'>
+    <div id='CH'>
+      <div id="House-chart"><canvas id="House"></canvas></div>
+      <div id="Economy-chart"><canvas id="Economy"></canvas></div>
+    </div>
+    <div id='CB'>
+      <div id="Travel-chart"><canvas id="Travel"></canvas></div>
+      <div id="CityCanva"><canvas id="city_info"></canvas></div>
+   </div>
+  </div>
+
+
     <div id="Wrapper" class="Wrapper">
         <h1 id="Title" class="Title">Enter your City and State!</h1>
         <div>
@@ -27,9 +38,7 @@
       <div id = "title">
         <!-- chart title (city or state)-->
       </div>
-      <div id="Display-chart">
-        <!--<canvas id="myChart"></canvas> -->
-      </div>
+   
       <script src="js/chart.js"></script>
       <script src="js/requete.js"></script>
       <script src="js/animation.js"></script>
