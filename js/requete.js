@@ -27,8 +27,12 @@ function exist(state,city){
                 move(data[0],data[1]);
                 done_input = true; 
         }
+        else{
+            document.getElementById("ErrorM").innerHTML ="This city lack of informations"
+        }
+   
     }).catch(err => {
-        console.log(err)
+        document.getElementById("ErrorM").innerHTML ="This city/state doesn't exist"
     })
     
 }

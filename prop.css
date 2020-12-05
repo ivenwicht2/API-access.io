@@ -1,11 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis');
 
 
+
+#baniere{
+  height: 10%;
+  width: 100%;
+  background-color: #7195AF;
+  position: absolute;
+}
+
 #Wrap-chart{
   position: relative;
   display: none;
-  left : 20%;
-  top : 20%;
+  left :10%;
+  top : 0%;
+  width: 80%;
+  background-color: white;
   
 }
 #CH{
@@ -104,10 +114,10 @@ html {
 }
 
 body {
-  /*background-image:url("images/flag.svg");
+  background-image:url("images/flag2.png");
   background-position: center;
-  background-repeat: no-repeat;*/
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -143,7 +153,8 @@ body {
 input {
   position: relative;
   max-width: 60%;
-  left:20%
+  left:20%;
+  padding: 0;
 }
 p,
 label {
