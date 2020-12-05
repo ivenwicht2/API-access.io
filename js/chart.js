@@ -5,7 +5,7 @@ function chart_city(json,city){
     let wrapper = document.getElementById("Wrap-chart"); 
 
     wrapper.style.display = "block";
-    document.body.style.display = "contents" ;
+    document.body.style.display = "blocks" ;
     document.body.style.alignItems  = ""
 
 
@@ -18,8 +18,7 @@ function chart_city(json,city){
             'backgroundColor': ["#F64B34", "#D3422E",'#B43A29','#9F3324','#902E20','#8C2D20','#7F2A1E7F2A1E']
         }],
     }
-    console.log("data 2",data);
-    hbar(data,"Quality of life",canvas1)
+    hbar(data,"Quality of life/10",canvas1)
 
     var canvas2 =document.getElementById("Economy");
 
@@ -30,8 +29,7 @@ function chart_city(json,city){
             'backgroundColor': ["#38B1E8", "#2D93C4",'#2E87B0','#287396','#226280','#1E5670']
         }],
     }
-    console.log("data 3",data);
-    hbar(data,"Economy",canvas2)
+    hbar(data,"Economy/10",canvas2)
 
 
     var canvas3 =document.getElementById("Travel");
@@ -43,8 +41,7 @@ function chart_city(json,city){
             'backgroundColor': ["#43F69D", "#34CF82",'#2DA167']
         }],
     }
-    console.log("data 4",data);
-    hbar(data,"Traveling",canvas3)
+    hbar(data,"Traveling/10",canvas3)
 
 
     var citywrap = document.getElementById("CityCanva");

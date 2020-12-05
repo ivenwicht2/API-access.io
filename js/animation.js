@@ -24,15 +24,13 @@ function move(json,city){
 
 
 
-var title = document.getElementById("title");
 var wrapper = document.getElementById("Wrapper");
 var input_state = document.getElementById("input");
 var input_city = document.getElementById("city-input");
 
 let done_input = false;
 
-title.style.top= "10%";
-title.style.left = "40%"; 
+
 
 
 
